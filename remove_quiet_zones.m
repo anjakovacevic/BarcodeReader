@@ -57,7 +57,7 @@ function [bar, bar_list, bar_mapping, flag] = remove_quiet_zones(bin_line, lengt
     for i = 1:length(mapping)
         line_len = line_len + lengths(i);
         if mapping(i) == 5
-            if bar_len == 95 || bar_len == 67
+            if bar_len == 95
                 bar_end = i - 1;
                 line_end = line_len - lengths(i);
                 break;
